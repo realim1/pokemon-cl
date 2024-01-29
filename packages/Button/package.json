@@ -1,5 +1,5 @@
 {
-	"name": "button",
+	"name": "@realim1/button",
 	"version": "1.0.0",
 	"description": "",
 	"main": "dist/cjs/index.js",
@@ -9,7 +9,11 @@
 		"build": "rollup -c --bundleConfigAsCjs",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "",
+	"repository": "https://github.com/realim1/pokemon-cl",
+	"publishConfig": {
+		"@realim1:registry": "https://npm.pkg.github.com/realim1"
+	},
+	"author": "Markus Realica",
 	"license": "ISC",
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^25.0.7",
