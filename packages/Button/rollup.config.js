@@ -1,11 +1,14 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
-import dts from "rollup-plugin-dts";
 import terser from "@rollup/plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import postcss from "rollup-plugin-postcss";
 
-const packageJson = require("./package.json");
+// PostCSS plugins
+import autoprefixer from "autoprefixer";
+
+import packageJson from "./package.json";
 
 export default [
 	{
@@ -27,13 +30,12 @@ export default [
 			resolve(),
 			commonjs(),
 			typescript({ tsconfig: "./tsconfig.json" }),
+			postcss({
+				extract: "Button.css",
+				plugins: [autoprefixer()],
+			}),
 			terser(),
 		],
 		external: ["react", "react-dom", "styled-components"],
-	},
-	{
-		input: "src/index.ts",
-		output: [{ file: "dist/types.d.ts", format: "es" }],
-		plugins: [dts.default()],
 	},
 ];
