@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.css";
+import "@realim1/scss/dist/Button.css";
 import { ButtonProps } from "./Button.types";
 
 /**
@@ -8,7 +8,6 @@ import { ButtonProps } from "./Button.types";
 export const Button = ({
 	primary = false,
 	size = "medium",
-	backgroundColor,
 	label,
 	...props
 }: ButtonProps) => {
@@ -16,8 +15,7 @@ export const Button = ({
 	return (
 		<button
 			type='button'
-			className={["Button", `Button--${size}`, mode].join(" ")}
-			style={{ backgroundColor }}
+			className={["Button", "pixel-corners", `Button--${size}`, mode].join(" ")}
 			{...props}>
 			{label}
 		</button>
