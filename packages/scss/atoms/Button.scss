@@ -1,0 +1,32 @@
+@use "../foundations/fonts";
+@use "../foundations/pixelated";
+/*=============================================
+=            	 	Button	  		          =
+=============================================*/
+
+.Button {
+	padding: 0.5rem 2rem;
+	font-family: "summer_pixel_22regular", Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+.Button:hover {
+	cursor: pointer;
+	background-color: gray;
+}
+
+.Button--large {
+	font-size: 3rem;
+	text-shadow: 0 0.25rem 0 gray;
+}
+
+.Button--medium {
+	font-size: 2rem;
+	text-shadow: 0 0.125rem 0 gray;
+}
+
+.Button--small {
+	padding: 0.5rem 1rem;
+	font-size: 1.5rem;
+	text-shadow: 0 0.125rem 0 gray;
+}

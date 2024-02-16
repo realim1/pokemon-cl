@@ -1,0 +1,18 @@
+{
+	"name": "@realim1/scss",
+	"version": "0.0.1",
+	"description": "Styles for the Component Library",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsx index.ts"
+	},
+	"author": "Markus Realica",
+	"license": "ISC",
+	"devDependencies": {
+		"fs-extra": "^11.2.0",
+		"path": "^0.12.7",
+		"sass": "^1.70.0",
+		"tsx": "^4.7.1"
+	}
+}
