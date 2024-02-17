@@ -4,29 +4,29 @@
 =            	 	Button	  		          =
 =============================================*/
 
-.Button {
+.button {
 	padding: 0.5rem 2rem;
 	font-family: "summer_pixel_22regular", Arial, sans-serif;
 	text-transform: uppercase;
 }
 
-.Button:hover {
+.button:hover {
 	cursor: pointer;
-	background-color: gray;
+	background-color: #808080;
 }
 
-.Button--large {
+.button--large {
 	font-size: 3rem;
-	text-shadow: 0 0.25rem 0 gray;
+	text-shadow: 0 0.25rem 0 #808080;
 }
 
-.Button--medium {
+.button--medium {
 	font-size: 2rem;
-	text-shadow: 0 0.125rem 0 gray;
+	text-shadow: 0 0.125rem 0 #808080;
 }
 
-.Button--small {
+.button--small {
 	padding: 0.5rem 1rem;
 	font-size: 1.5rem;
-	text-shadow: 0 0.125rem 0 gray;
+	text-shadow: 0 0.125rem 0 #808080;
 }

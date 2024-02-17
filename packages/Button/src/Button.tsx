@@ -11,11 +11,11 @@ export const Button = ({
 	label,
 	...props
 }: ButtonProps) => {
-	const mode = primary ? "Button--primary" : "Button--secondary";
+	const mode = primary ? "button--primary" : "button--secondary";
 	return (
 		<button
 			type='button'
-			className={["Button", "pixel-corners", `Button--${size}`, mode].join(" ")}
+			className={["button", "pixel-corners", `button--${size}`, mode].join(" ")}
 			{...props}>
 			{label}
 		</button>

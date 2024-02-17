@@ -5,6 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint:styles": "stylelint **/*.scss",
+		"lint:styles:fix": "stylelint **/*.scss --fix",
 		"build": "tsx index.ts"
 	},
 	"author": "Markus Realica",
@@ -13,6 +15,8 @@
 		"fs-extra": "^11.2.0",
 		"path": "^0.12.7",
 		"sass": "^1.70.0",
+		"stylelint": "^16.2.1",
+		"stylelint-config-sass-guidelines": "^11.0.0",
 		"tsx": "^4.7.1"
 	}
 }
