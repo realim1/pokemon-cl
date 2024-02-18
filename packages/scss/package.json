@@ -7,12 +7,17 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint:styles": "stylelint **/*.scss",
 		"lint:styles:fix": "stylelint **/*.scss --fix",
-		"build": "tsx index.ts"
+		"build": "tsx index.ts",
+		"pre-commit": "lint-staged"
+	},
+	"lint-staged": {
+		"*.scss": "npm run lint:styles:fix"
 	},
 	"author": "Markus Realica",
 	"license": "ISC",
 	"devDependencies": {
 		"fs-extra": "^11.2.0",
+		"lint-staged": "^15.2.2",
 		"path": "^0.12.7",
 		"sass": "^1.70.0",
 		"stylelint": "^16.2.1",
